@@ -7,10 +7,10 @@ The analysis occurs sequentially through 10 scripts, described below. 6 folders 
 This script loads the necessary packages, imports the baseline energy & emissions data, and cleans and combines the data into one "Baseline" dataframe 
 
 2. BuildingCategories.R
-Thus script creates the following labels for each building in the dataset:
-  1. Covered by Local Law 97 (1 - yes, 0 - no)
-  2. Housing Type (Subsidized, Naturally Occurring Affordable Housing (NOAH), Rent Regulated, or Market Rate)
-  3. Age & Size (Pre-war, post-war, post-1980, low-rise, high-rise, very large)
+This script creates the following labels for each building in the dataset:
+  Covered by Local Law 97 (1 - yes, 0 - no)
+  Housing Type (Subsidized, Naturally Occurring Affordable Housing (NOAH), Rent Regulated, or Market Rate)
+  Age & Size (Pre-war, post-war, post-1980, low-rise, high-rise, very large)
 
 3. BaselineEUIandEmissions.R
 This script calculates the baseline EUI and emissions intensity for each building, removes outliers, runs regressions, and analyzes the fuel types used in buildings
@@ -35,5 +35,5 @@ This script models Scenario 3 - Fully Electric Passive House in 2024 - by calcul
 
 10. ScenarioOutputs.R
 This script creates the following figures:
-  1. plots of the EUI for a representative building to illustrate the three scenarios
-  2. one figure for each scenario that combines energy cost savings, avoided penalties, and total cost savings in one figure
+  Plots of the EUI for a representative building to illustrate the three scenarios
+  One figure for each scenario that combines energy cost savings, avoided penalties, and total cost savings in one figure
